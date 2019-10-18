@@ -1,0 +1,32 @@
+Projet
+--------------------
+
+Sujet :
+- Gestion parc materiel agricole
+
+--------------------
+
+Spécifications :
+ 
+- Compte agriculteur avec photo et couleur 
+- Retrouver le matériel  sur une carte 
+- C'est  un groupement communautaire agricole GAEC 
+- outil de pret de materiel 
+- Recherche    sur une carte 
+- Amortissement / coût 
+- Voir disponibilité materiel / Observation
+- Prêt inter Gaec
+- Réservation pour un temps donné 
+- Processus de mise  à dispo flexible
+
+----------------------------------------------------
+
+en tant qu'agriculteur,
+je veux faire un prêt de matériel au pres de mes collègues agriculteurs
+afin de réduire mes dépenses, utiliser le métriel adéquat pour mon activité
+------------
+en tant qu'agriculteur disposant d'un matériel au repos,
+je veux le préter à mes collègues agriculteurs contre une petit somme
+afin d'assurer l'entretien du matériel et aider la communauté. 
+------------
+Tâches : 
