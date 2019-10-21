@@ -1,0 +1,14 @@
+{
+  "name": "agriparcapi",
+  "version": "1.0.0",
+  "description": "api express js AgriParc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yassine & Pierre",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
