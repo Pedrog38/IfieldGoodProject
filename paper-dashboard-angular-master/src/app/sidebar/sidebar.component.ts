@@ -19,6 +19,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
     { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
     { path: '/calendar',      title: 'Calendar',          icon:'nc-calendar-60',class: ''},
+    { path: '/materiel',      title: 'Materiel',          icon:'nc-bus-front-12',class: ''}
 ];
 
 @Component({

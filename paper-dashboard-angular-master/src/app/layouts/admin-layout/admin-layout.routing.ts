@@ -10,6 +10,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import { CalendarComponent } from '../../pages/calendar/calendar.component';
 import { GaecComponent } from 'app/pages/gaec/gaec.component';
+import { MaterielComponent } from 'app/pages/materiel/materiel.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -22,4 +23,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'calendar',       component: CalendarComponent },
+    { path: 'materiel',       component: MaterielComponent },
 ];

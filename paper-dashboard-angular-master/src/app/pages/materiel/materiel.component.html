@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-lg-4 col-md-3 col-sm-3 ">
+    <form [formGroup]="matForm" (ngSubmit)="onSubmit(matForm.value)">
+      <h2 class="text-center display-8">Ajouter un Nouveau Engin</h2>
+      <div class="card card-stats">
+        <div class="card-body ">
+          <div class="form-group">
+            <label for="marque">
+                Marque de l'engin
+            </label>
+            <input id="marque" class="form-control" type="text" formControlName="marque">
+          </div>
+      
+          <div class="form-group">
+              <label for="modele">
+                  Modele de l'engin
+              </label>
+              <input id="modele" class="form-control" type="text" formControlName="modele">
+          </div>
+      
+          <div class="form-group">
+            <label for="categorie">
+                Catégorie
+            </label>
+            <input id="categorie" class="form-control" type="text" formControlName="categorie">
+          </div>
+      
+          <div class="form-group">
+              <label for="gaec">
+                GAEC
+              </label>
+              <input id="gaec" class="form-control" type="number" formControlName="gaec">
+          </div>
+          <div class="form-group">
+              <label for="urlImage">
+                URL de l'image
+              </label>
+              <input id="urlImage" class="form-control" type="text" formControlName="urlImage">
+          </div>
+  
+          <button class="button"  class="btn btn-info" type="submit">Afficher</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <div class="col-lg-6 col-md-6">
+      <h2 class="text-center display-8">Liste du matériel disponible</h2>
+      <div class="card-group">
+          <div class="col-lg-4" *ngFor="let mat of listMateriel">
+              <div class="card">
+                  <img src={{mat.urlImage}}
+                      class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title" class="text-right">{{mat.marque}}</h5>
+                      <p class="card-text" class="text-right">{{mat.modele}}</p>
+                      <p class="card-text" class="text-right">{{mat.categorie}}</p>
+                      <p class="card-text" class="text-right">{{mat.gaec_id.nom}}</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AdminLayoutRoutes } from './admin-layout.routing';
 
@@ -18,6 +18,8 @@ import { CalendarComponent}         from '../../pages/calendar/calendar.componen
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { GaecComponent } from 'app/pages/gaec/gaec.component';
+import { MaterielComponent } from 'app/pages/materiel/materiel.component';
+
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { GaecComponent } from 'app/pages/gaec/gaec.component';
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     NgbModule,
-    FullCalendarModule
+    FullCalendarModule,
+    ReactiveFormsModule
   ],
   declarations: [
     DashboardComponent,
@@ -38,7 +41,8 @@ import { GaecComponent } from 'app/pages/gaec/gaec.component';
     MapsComponent,
     NotificationsComponent,
     CalendarComponent,
-    GaecComponent
+    GaecComponent,
+    MaterielComponent
   ]
 })
 

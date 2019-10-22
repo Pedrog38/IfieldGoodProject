@@ -13,6 +13,10 @@ import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MaterielService } from './services/materiel.service';
+import { FormBuilder } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -29,9 +33,10 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     NavbarModule,
     ToastrModule.forRoot(),
     FooterModule,
-    FixedPluginModule
+    FixedPluginModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient,MaterielService,FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

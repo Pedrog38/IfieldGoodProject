@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 const Sequelize = require('sequelize');
-
 const Model = Sequelize.Model;
 
 const sequelize = new Sequelize('agriparc', 'root', '', {
