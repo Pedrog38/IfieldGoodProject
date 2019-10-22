@@ -13,12 +13,12 @@ export class GaecComponent implements OnInit {
   public gaecForm;
 
   constructor(
-    public gaecService :GaecService,
-    public formBuilder :FormBuilder
+    /* public gaecService :GaecService,
+     public formBuilder :FormBuilder */
   ) { }
 
   ngOnInit() {
-    this.gaecForm = this.formBuilder.group({})
+    //this.gaecForm = this.formBuilder.group({})
   }
 
 }
