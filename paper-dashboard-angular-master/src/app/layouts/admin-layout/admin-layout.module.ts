@@ -17,6 +17,8 @@ import { CalendarComponent}         from '../../pages/calendar/calendar.componen
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { GaecComponent } from 'app/pages/gaec/gaec.component';
+
 
 @NgModule({
   imports: [
@@ -36,6 +38,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
     MapsComponent,
     NotificationsComponent,
     CalendarComponent,
+    GaecComponent
   ]
 })
 
