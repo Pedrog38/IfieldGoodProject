@@ -1,1 +1,39 @@
-<p>gaec works!</p>
+<div class="row">
+    <div class="col-lg-5 col-md-12">
+        <h2 class="text-center display-4">Ajouter un Gaec</h2>
+        <form [formGroup]="gaecForm" (ngSubmit)="onSubmit(gaecForm.value)">
+            <div class="form-group">
+                <label for="nom">nom :</label>
+                <input type="text" id="nom" formControlName="nom" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" formControlName="adresse" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail :</label>
+                <input type="email" id="mail" formControlName="mail" class="form-control" required>
+            </div>
+            <div>
+                <button class="button btn btn-layout-primary" type="submit">Ajouter</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-7 col-md-12">
+        <h2 class="text-center display-4">Liste des Gaecs</h2>
+        <div class="card-group">
+            <div class="col-lg-4" *ngFor="let gaec of listeGaec">
+                <div class="card">
+                    <img src="https://image1.lamontagne.fr/photoSRC/VVNUJ1paUTgIBhVOCRAHHQ4zRSkXaldfVR5dW1sXVA49/herve-mathez-eleveur-bio-gaec-de-la-brande_3815523.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{gaec.nom}}</h5>
+                        <p class="card-text">{{gaec.adresse}}</p>
+                        <p><a href="mailto:{{gaec.mail}}">{{gaec.mail}}</a></p>
+                        <p>maj : {{gaec.updatedAt | date}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

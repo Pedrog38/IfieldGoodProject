@@ -9,7 +9,11 @@ export class GaecService {
 
   constructor(private http :HttpClient) { }
 
-  getGaecList() {
+  getGaecList(): Promise<any> {
     return this.http.get(this.apiUrl).toPromise();
+  }
+
+  postGaec(data): Promise<any> {
+    return this.http.post(this.apiUrl, data).toPromise();
   }
 }
